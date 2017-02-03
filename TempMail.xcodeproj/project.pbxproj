@@ -36,6 +36,7 @@
 		349858541E442576003D0ED3 /* MailboxGatewayTempMailAPIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858531E442576003D0ED3 /* MailboxGatewayTempMailAPIFactory.swift */; };
 		349858561E4425A1003D0ED3 /* CryptoGatewayCommonCryptoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858551E4425A1003D0ED3 /* CryptoGatewayCommonCryptoFactory.swift */; };
 		349858581E4425EC003D0ED3 /* RandomUsersGatewayMemoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858571E4425EC003D0ED3 /* RandomUsersGatewayMemoryFactory.swift */; };
+		3498585A1E442691003D0ED3 /* MailboxNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858591E442691003D0ED3 /* MailboxNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		349858531E442576003D0ED3 /* MailboxGatewayTempMailAPIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewayTempMailAPIFactory.swift; sourceTree = "<group>"; };
 		349858551E4425A1003D0ED3 /* CryptoGatewayCommonCryptoFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoGatewayCommonCryptoFactory.swift; sourceTree = "<group>"; };
 		349858571E4425EC003D0ED3 /* RandomUsersGatewayMemoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGatewayMemoryFactory.swift; sourceTree = "<group>"; };
+		349858591E442691003D0ED3 /* MailboxNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				3498584E1E442498003D0ED3 /* MailboxViewController.swift */,
+				349858591E442691003D0ED3 /* MailboxNavigationController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				340039791E43C5C20038093C /* GenerateMailboxPresenter.swift in Sources */,
 				349858391E43EEB0003D0ED3 /* RandomUsersGateway.swift in Sources */,
 				3400394B1E43C30F0038093C /* AppDelegate.swift in Sources */,
+				3498585A1E442691003D0ED3 /* MailboxNavigationController.swift in Sources */,
 				349858561E4425A1003D0ED3 /* CryptoGatewayCommonCryptoFactory.swift in Sources */,
 				3498583F1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift in Sources */,
 				346D9E981E43E2DC006EC4DA /* DomainValueObject.swift in Sources */,
