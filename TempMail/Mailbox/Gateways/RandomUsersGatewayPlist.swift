@@ -11,9 +11,9 @@ struct RandomUsersGatewayPlist: RandomUsersGateway {
         var firstAndLastName = (first: "default", last: "default")
 
         let firstNameRandomIndex = Int(arc4random_uniform(UInt32(firstNames.count)))
-        firstAndLastName.first = firstNames[firstNameRandomIndex].lowercased()
+        firstAndLastName.first = firstNames[firstNameRandomIndex]
         let lastNameRandomIndex = Int(arc4random_uniform(UInt32(lastNames.count)))
-        firstAndLastName.last = lastNames[lastNameRandomIndex].lowercased()
+        firstAndLastName.last = lastNames[lastNameRandomIndex]
 
         return firstAndLastName
     }

@@ -13,7 +13,10 @@ class RandomUsersGatewayPlistTests: XCTestCase {
     func testGenerateUsernameWithData() {
         let randomGeneratedUsername = gateway.generateUsername()
 
-        XCTAssertTrue(randomGeneratedUsername.characters.count > 1)
+        let firstName = randomGeneratedUsername.components(separatedBy: ".").first!
+        XCTAssertTrue(firstNames.contains(firstName))
+        let lastName = randomGeneratedUsername.components(separatedBy: ".").last!
+        XCTAssertTrue(lastNames.contains(lastName))
         XCTAssertNotEqual(randomGeneratedUsername, "default.default")
     }
 }
