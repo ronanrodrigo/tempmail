@@ -1,7 +1,7 @@
 import XCTest
 @testable import TempMail
 
-class RandomUsersGatewayPlistTests: XCTestCase {
+class RandomUsersGatewayMemoryTests: XCTestCase {
 
     var gateway: RandomUsersGatewayPlist!
 

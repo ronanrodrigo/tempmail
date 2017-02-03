@@ -28,9 +28,14 @@
 		3498583D1E43F158003D0ED3 /* MailboxGatewayErrros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498583C1E43F158003D0ED3 /* MailboxGatewayErrros.swift */; };
 		3498583F1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498583E1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift */; };
 		349858411E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858401E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift */; };
-		349858471E441980003D0ED3 /* RandomUsersGatewayPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858461E441980003D0ED3 /* RandomUsersGatewayPlist.swift */; };
-		349858491E441DC1003D0ED3 /* RandomUsersGatewayPlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858481E441DC1003D0ED3 /* RandomUsersGatewayPlistTests.swift */; };
+		349858471E441980003D0ED3 /* RandomUsersGatewayMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858461E441980003D0ED3 /* RandomUsersGatewayMemory.swift */; };
+		349858491E441DC1003D0ED3 /* RandomUsersGatewayMemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858481E441DC1003D0ED3 /* RandomUsersGatewayMemoryTests.swift */; };
 		3498584C1E4420A0003D0ED3 /* Usernames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498584B1E4420A0003D0ED3 /* Usernames.swift */; };
+		3498584F1E442498003D0ED3 /* MailboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498584E1E442498003D0ED3 /* MailboxViewController.swift */; };
+		349858521E4424E3003D0ED3 /* GenerateMailboxUsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858511E4424E3003D0ED3 /* GenerateMailboxUsecaseFactory.swift */; };
+		349858541E442576003D0ED3 /* MailboxGatewayTempMailAPIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858531E442576003D0ED3 /* MailboxGatewayTempMailAPIFactory.swift */; };
+		349858561E4425A1003D0ED3 /* CryptoGatewayCommonCryptoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858551E4425A1003D0ED3 /* CryptoGatewayCommonCryptoFactory.swift */; };
+		349858581E4425EC003D0ED3 /* RandomUsersGatewayMemoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858571E4425EC003D0ED3 /* RandomUsersGatewayMemoryFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,9 +75,14 @@
 		3498583C1E43F158003D0ED3 /* MailboxGatewayErrros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewayErrros.swift; sourceTree = "<group>"; };
 		3498583E1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewayTempMailAPI.swift; sourceTree = "<group>"; };
 		349858401E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewayTempMailAPITests.swift; sourceTree = "<group>"; };
-		349858461E441980003D0ED3 /* RandomUsersGatewayPlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGatewayPlist.swift; sourceTree = "<group>"; };
-		349858481E441DC1003D0ED3 /* RandomUsersGatewayPlistTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGatewayPlistTests.swift; sourceTree = "<group>"; };
+		349858461E441980003D0ED3 /* RandomUsersGatewayMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGatewayMemory.swift; sourceTree = "<group>"; };
+		349858481E441DC1003D0ED3 /* RandomUsersGatewayMemoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGatewayMemoryTests.swift; sourceTree = "<group>"; };
 		3498584B1E4420A0003D0ED3 /* Usernames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usernames.swift; sourceTree = "<group>"; };
+		3498584E1E442498003D0ED3 /* MailboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxViewController.swift; sourceTree = "<group>"; };
+		349858511E4424E3003D0ED3 /* GenerateMailboxUsecaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateMailboxUsecaseFactory.swift; sourceTree = "<group>"; };
+		349858531E442576003D0ED3 /* MailboxGatewayTempMailAPIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewayTempMailAPIFactory.swift; sourceTree = "<group>"; };
+		349858551E4425A1003D0ED3 /* CryptoGatewayCommonCryptoFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoGatewayCommonCryptoFactory.swift; sourceTree = "<group>"; };
+		349858571E4425EC003D0ED3 /* RandomUsersGatewayMemoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGatewayMemoryFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,9 +172,11 @@
 			isa = PBXGroup;
 			children = (
 				346D9E961E43E2C6006EC4DA /* Entities */,
+				349858501E4424CE003D0ED3 /* Factories */,
 				340039941E43DAB00038093C /* Gateways */,
 				340039931E43DAA10038093C /* Protocols */,
 				3400397B1E43C5D20038093C /* Usecases */,
+				3498584D1E442487003D0ED3 /* ViewControllers */,
 			);
 			path = Mailbox;
 			sourceTree = "<group>";
@@ -210,7 +222,7 @@
 			children = (
 				340039841E43C87B0038093C /* CryptoGatewayTests.swift */,
 				349858401E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift */,
-				349858481E441DC1003D0ED3 /* RandomUsersGatewayPlistTests.swift */,
+				349858481E441DC1003D0ED3 /* RandomUsersGatewayMemoryTests.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -257,7 +269,7 @@
 			children = (
 				340039951E43DABB0038093C /* CryptoGatewayCommonCrypto.swift */,
 				3498583E1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift */,
-				349858461E441980003D0ED3 /* RandomUsersGatewayPlist.swift */,
+				349858461E441980003D0ED3 /* RandomUsersGatewayMemory.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -286,6 +298,25 @@
 				3498583C1E43F158003D0ED3 /* MailboxGatewayErrros.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		3498584D1E442487003D0ED3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3498584E1E442498003D0ED3 /* MailboxViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		349858501E4424CE003D0ED3 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				349858551E4425A1003D0ED3 /* CryptoGatewayCommonCryptoFactory.swift */,
+				349858511E4424E3003D0ED3 /* GenerateMailboxUsecaseFactory.swift */,
+				349858531E442576003D0ED3 /* MailboxGatewayTempMailAPIFactory.swift */,
+				349858571E4425EC003D0ED3 /* RandomUsersGatewayMemoryFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,20 +441,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349858471E441980003D0ED3 /* RandomUsersGatewayPlist.swift in Sources */,
+				349858471E441980003D0ED3 /* RandomUsersGatewayMemory.swift in Sources */,
 				3498584C1E4420A0003D0ED3 /* Usernames.swift in Sources */,
 				340039811E43C7D70038093C /* CryptoGateway.swift in Sources */,
 				340039781E43C5C20038093C /* GenerateMailboxUsecase.swift in Sources */,
 				3498583D1E43F158003D0ED3 /* MailboxGatewayErrros.swift in Sources */,
+				3498584F1E442498003D0ED3 /* MailboxViewController.swift in Sources */,
+				349858521E4424E3003D0ED3 /* GenerateMailboxUsecaseFactory.swift in Sources */,
+				349858541E442576003D0ED3 /* MailboxGatewayTempMailAPIFactory.swift in Sources */,
 				3400397E1E43C61F0038093C /* MailboxGateway.swift in Sources */,
 				340039791E43C5C20038093C /* GenerateMailboxPresenter.swift in Sources */,
 				349858391E43EEB0003D0ED3 /* RandomUsersGateway.swift in Sources */,
 				3400394B1E43C30F0038093C /* AppDelegate.swift in Sources */,
+				349858561E4425A1003D0ED3 /* CryptoGatewayCommonCryptoFactory.swift in Sources */,
 				3498583F1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift in Sources */,
 				346D9E981E43E2DC006EC4DA /* DomainValueObject.swift in Sources */,
 				3400399E1E43DDF50038093C /* Result.swift in Sources */,
 				340039961E43DABB0038093C /* CryptoGatewayCommonCrypto.swift in Sources */,
 				340039A11E43DED20038093C /* Domain.swift in Sources */,
+				349858581E4425EC003D0ED3 /* RandomUsersGatewayMemoryFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +472,7 @@
 				3498583B1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift in Sources */,
 				349858411E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift in Sources */,
 				340039851E43C87B0038093C /* CryptoGatewayTests.swift in Sources */,
-				349858491E441DC1003D0ED3 /* RandomUsersGatewayPlistTests.swift in Sources */,
+				349858491E441DC1003D0ED3 /* RandomUsersGatewayMemoryTests.swift in Sources */,
 				3400398C1E43D37D0038093C /* CryptoGatewayStub.swift in Sources */,
 				340039921E43D4820038093C /* GenerateMailboxPresenterSpy.swift in Sources */,
 			);

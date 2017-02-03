@@ -1,6 +1,6 @@
 import Foundation
 
-struct RandomUsersGatewayPlist: RandomUsersGateway {
+struct RandomUsersGatewayMemory: RandomUsersGateway {
 
     func generateUsername() -> String {
         let names = pickFirstNameAndLastName()
