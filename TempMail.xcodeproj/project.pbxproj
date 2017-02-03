@@ -28,6 +28,9 @@
 		3498583D1E43F158003D0ED3 /* MailboxGatewayErrros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498583C1E43F158003D0ED3 /* MailboxGatewayErrros.swift */; };
 		3498583F1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498583E1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift */; };
 		349858411E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858401E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift */; };
+		349858471E441980003D0ED3 /* RandomUsersGatewayPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858461E441980003D0ED3 /* RandomUsersGatewayPlist.swift */; };
+		349858491E441DC1003D0ED3 /* RandomUsersGatewayPlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858481E441DC1003D0ED3 /* RandomUsersGatewayPlistTests.swift */; };
+		3498584C1E4420A0003D0ED3 /* Usernames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498584B1E4420A0003D0ED3 /* Usernames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		3498583C1E43F158003D0ED3 /* MailboxGatewayErrros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewayErrros.swift; sourceTree = "<group>"; };
 		3498583E1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewayTempMailAPI.swift; sourceTree = "<group>"; };
 		349858401E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewayTempMailAPITests.swift; sourceTree = "<group>"; };
+		349858461E441980003D0ED3 /* RandomUsersGatewayPlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGatewayPlist.swift; sourceTree = "<group>"; };
+		349858481E441DC1003D0ED3 /* RandomUsersGatewayPlistTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGatewayPlistTests.swift; sourceTree = "<group>"; };
+		3498584B1E4420A0003D0ED3 /* Usernames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usernames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +114,8 @@
 		340039491E43C30F0038093C /* TempMail */ = {
 			isa = PBXGroup;
 			children = (
-				3400399C1E43DDEC0038093C /* Commons */,
 				3400396B1E43C33B0038093C /* Base */,
+				3400399C1E43DDEC0038093C /* Commons */,
 				340039711E43C59B0038093C /* Mailbox */,
 			);
 			path = TempMail;
@@ -204,6 +210,7 @@
 			children = (
 				340039841E43C87B0038093C /* CryptoGatewayTests.swift */,
 				349858401E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift */,
+				349858481E441DC1003D0ED3 /* RandomUsersGatewayPlistTests.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -250,6 +257,7 @@
 			children = (
 				340039951E43DABB0038093C /* CryptoGatewayCommonCrypto.swift */,
 				3498583E1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift */,
+				349858461E441980003D0ED3 /* RandomUsersGatewayPlist.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -258,8 +266,9 @@
 			isa = PBXGroup;
 			children = (
 				3400399D1E43DDF50038093C /* Result.swift */,
+				3498584B1E4420A0003D0ED3 /* Usernames.swift */,
 			);
-			name = Commons;
+			path = Commons;
 			sourceTree = "<group>";
 		};
 		3400399F1E43DEC90038093C /* Entities */ = {
@@ -267,7 +276,7 @@
 			children = (
 				340039A01E43DED20038093C /* Domain.swift */,
 			);
-			name = Entities;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		346D9E961E43E2C6006EC4DA /* Entities */ = {
@@ -276,7 +285,7 @@
 				346D9E971E43E2DC006EC4DA /* DomainValueObject.swift */,
 				3498583C1E43F158003D0ED3 /* MailboxGatewayErrros.swift */,
 			);
-			name = Entities;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +410,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349858471E441980003D0ED3 /* RandomUsersGatewayPlist.swift in Sources */,
+				3498584C1E4420A0003D0ED3 /* Usernames.swift in Sources */,
 				340039811E43C7D70038093C /* CryptoGateway.swift in Sources */,
 				340039781E43C5C20038093C /* GenerateMailboxUsecase.swift in Sources */,
 				3498583D1E43F158003D0ED3 /* MailboxGatewayErrros.swift in Sources */,
@@ -425,6 +436,7 @@
 				3498583B1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift in Sources */,
 				349858411E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift in Sources */,
 				340039851E43C87B0038093C /* CryptoGatewayTests.swift in Sources */,
+				349858491E441DC1003D0ED3 /* RandomUsersGatewayPlistTests.swift in Sources */,
 				3400398C1E43D37D0038093C /* CryptoGatewayStub.swift in Sources */,
 				340039921E43D4820038093C /* GenerateMailboxPresenterSpy.swift in Sources */,
 			);
