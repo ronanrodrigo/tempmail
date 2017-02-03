@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3400394B1E43C30F0038093C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3400394A1E43C30F0038093C /* AppDelegate.swift */; };
+		340039521E43C30F0038093C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340039511E43C30F0038093C /* Assets.xcassets */; };
+		340039551E43C30F0038093C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340039531E43C30F0038093C /* LaunchScreen.storyboard */; };
+		340039701E43C5120038093C /* GenerateMailboxUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3400396F1E43C5120038093C /* GenerateMailboxUsecaseTests.swift */; };
+		340039781E43C5C20038093C /* GenerateMailboxUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340039761E43C5C20038093C /* GenerateMailboxUsecase.swift */; };
+		340039791E43C5C20038093C /* GenerateMailboxPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340039771E43C5C20038093C /* GenerateMailboxPresenter.swift */; };
+		3400397E1E43C61F0038093C /* MailboxGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3400397D1E43C61F0038093C /* MailboxGateway.swift */; };
+		340039811E43C7D70038093C /* CryptoGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340039801E43C7D70038093C /* CryptoGateway.swift */; };
+		340039851E43C87B0038093C /* CryptoGatewayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340039841E43C87B0038093C /* CryptoGatewayTests.swift */; };
+		3400398C1E43D37D0038093C /* CryptoGatewayStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3400398B1E43D37D0038093C /* CryptoGatewayStub.swift */; };
+		3400398F1E43D41D0038093C /* MailboxGatewaySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3400398E1E43D41D0038093C /* MailboxGatewaySpy.swift */; };
+		340039921E43D4820038093C /* GenerateMailboxPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340039911E43D4820038093C /* GenerateMailboxPresenterSpy.swift */; };
+		340039961E43DABB0038093C /* CryptoGatewayCommonCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340039951E43DABB0038093C /* CryptoGatewayCommonCrypto.swift */; };
+		3400399E1E43DDF50038093C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3400399D1E43DDF50038093C /* Result.swift */; };
+		340039A11E43DED20038093C /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340039A01E43DED20038093C /* Domain.swift */; };
+		346D9E981E43E2DC006EC4DA /* DomainValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D9E971E43E2DC006EC4DA /* DomainValueObject.swift */; };
+		349858391E43EEB0003D0ED3 /* RandomUsersGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858381E43EEB0003D0ED3 /* RandomUsersGateway.swift */; };
+		3498583B1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498583A1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift */; };
+		3498583D1E43F158003D0ED3 /* MailboxGatewayErrros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498583C1E43F158003D0ED3 /* MailboxGatewayErrros.swift */; };
+		3498583F1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498583E1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift */; };
+		349858411E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858401E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3400395C1E43C30F0038093C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3400393F1E43C30F0038093C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 340039461E43C30F0038093C;
+			remoteInfo = TempMail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		340039471E43C30F0038093C /* TempMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3400394A1E43C30F0038093C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		340039511E43C30F0038093C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		340039541E43C30F0038093C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		340039561E43C30F0038093C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3400395B1E43C30F0038093C /* TempMailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempMailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		340039611E43C30F0038093C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3400396F1E43C5120038093C /* GenerateMailboxUsecaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateMailboxUsecaseTests.swift; sourceTree = "<group>"; };
+		340039761E43C5C20038093C /* GenerateMailboxUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateMailboxUsecase.swift; sourceTree = "<group>"; };
+		340039771E43C5C20038093C /* GenerateMailboxPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateMailboxPresenter.swift; sourceTree = "<group>"; };
+		3400397D1E43C61F0038093C /* MailboxGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGateway.swift; sourceTree = "<group>"; };
+		340039801E43C7D70038093C /* CryptoGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoGateway.swift; sourceTree = "<group>"; };
+		340039841E43C87B0038093C /* CryptoGatewayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoGatewayTests.swift; sourceTree = "<group>"; };
+		340039861E43CAD20038093C /* TempMail-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TempMail-Bridging-Header.h"; sourceTree = "<group>"; };
+		3400398B1E43D37D0038093C /* CryptoGatewayStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoGatewayStub.swift; sourceTree = "<group>"; };
+		3400398E1E43D41D0038093C /* MailboxGatewaySpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewaySpy.swift; sourceTree = "<group>"; };
+		340039911E43D4820038093C /* GenerateMailboxPresenterSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateMailboxPresenterSpy.swift; sourceTree = "<group>"; };
+		340039951E43DABB0038093C /* CryptoGatewayCommonCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoGatewayCommonCrypto.swift; sourceTree = "<group>"; };
+		3400399D1E43DDF50038093C /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		340039A01E43DED20038093C /* Domain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
+		346D9E971E43E2DC006EC4DA /* DomainValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainValueObject.swift; sourceTree = "<group>"; };
+		349858381E43EEB0003D0ED3 /* RandomUsersGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGateway.swift; sourceTree = "<group>"; };
+		3498583A1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGatewayStub.swift; sourceTree = "<group>"; };
+		3498583C1E43F158003D0ED3 /* MailboxGatewayErrros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewayErrros.swift; sourceTree = "<group>"; };
+		3498583E1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewayTempMailAPI.swift; sourceTree = "<group>"; };
+		349858401E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxGatewayTempMailAPITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		340039441E43C30F0038093C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340039581E43C30F0038093C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3400393E1E43C30F0038093C = {
+			isa = PBXGroup;
+			children = (
+				340039491E43C30F0038093C /* TempMail */,
+				3400395E1E43C30F0038093C /* TempMailTests */,
+				340039481E43C30F0038093C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		340039481E43C30F0038093C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				340039471E43C30F0038093C /* TempMail.app */,
+				3400395B1E43C30F0038093C /* TempMailTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		340039491E43C30F0038093C /* TempMail */ = {
+			isa = PBXGroup;
+			children = (
+				3400399C1E43DDEC0038093C /* Commons */,
+				3400396B1E43C33B0038093C /* Base */,
+				340039711E43C59B0038093C /* Mailbox */,
+			);
+			path = TempMail;
+			sourceTree = "<group>";
+		};
+		3400395E1E43C30F0038093C /* TempMailTests */ = {
+			isa = PBXGroup;
+			children = (
+				3400396C1E43C3420038093C /* Base */,
+				340039821E43C8630038093C /* Mailbox */,
+			);
+			path = TempMailTests;
+			sourceTree = "<group>";
+		};
+		3400396B1E43C33B0038093C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3400394A1E43C30F0038093C /* AppDelegate.swift */,
+				340039511E43C30F0038093C /* Assets.xcassets */,
+				340039561E43C30F0038093C /* Info.plist */,
+				340039531E43C30F0038093C /* LaunchScreen.storyboard */,
+				340039861E43CAD20038093C /* TempMail-Bridging-Header.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3400396C1E43C3420038093C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				340039611E43C30F0038093C /* Info.plist */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3400396E1E43C4840038093C /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				3400396F1E43C5120038093C /* GenerateMailboxUsecaseTests.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		340039711E43C59B0038093C /* Mailbox */ = {
+			isa = PBXGroup;
+			children = (
+				346D9E961E43E2C6006EC4DA /* Entities */,
+				340039941E43DAB00038093C /* Gateways */,
+				340039931E43DAA10038093C /* Protocols */,
+				3400397B1E43C5D20038093C /* Usecases */,
+			);
+			path = Mailbox;
+			sourceTree = "<group>";
+		};
+		3400397A1E43C5CB0038093C /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				340039771E43C5C20038093C /* GenerateMailboxPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		3400397B1E43C5D20038093C /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				340039761E43C5C20038093C /* GenerateMailboxUsecase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		3400397C1E43C6140038093C /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				340039801E43C7D70038093C /* CryptoGateway.swift */,
+				3400397D1E43C61F0038093C /* MailboxGateway.swift */,
+				349858381E43EEB0003D0ED3 /* RandomUsersGateway.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		340039821E43C8630038093C /* Mailbox */ = {
+			isa = PBXGroup;
+			children = (
+				340039891E43D3460038093C /* Doubles */,
+				340039831E43C86C0038093C /* Gateways */,
+				3400396E1E43C4840038093C /* Usecases */,
+			);
+			path = Mailbox;
+			sourceTree = "<group>";
+		};
+		340039831E43C86C0038093C /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				340039841E43C87B0038093C /* CryptoGatewayTests.swift */,
+				349858401E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		340039891E43D3460038093C /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				3400398D1E43D3810038093C /* Gateways */,
+				340039901E43D4750038093C /* Presenters */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		3400398D1E43D3810038093C /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				3400398B1E43D37D0038093C /* CryptoGatewayStub.swift */,
+				3400398E1E43D41D0038093C /* MailboxGatewaySpy.swift */,
+				3498583A1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		340039901E43D4750038093C /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				340039911E43D4820038093C /* GenerateMailboxPresenterSpy.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		340039931E43DAA10038093C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3400399F1E43DEC90038093C /* Entities */,
+				3400397C1E43C6140038093C /* Gateways */,
+				3400397A1E43C5CB0038093C /* Presenters */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		340039941E43DAB00038093C /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				340039951E43DABB0038093C /* CryptoGatewayCommonCrypto.swift */,
+				3498583E1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		3400399C1E43DDEC0038093C /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				3400399D1E43DDF50038093C /* Result.swift */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		3400399F1E43DEC90038093C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				340039A01E43DED20038093C /* Domain.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		346D9E961E43E2C6006EC4DA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				346D9E971E43E2DC006EC4DA /* DomainValueObject.swift */,
+				3498583C1E43F158003D0ED3 /* MailboxGatewayErrros.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		340039461E43C30F0038093C /* TempMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 340039641E43C30F0038093C /* Build configuration list for PBXNativeTarget "TempMail" */;
+			buildPhases = (
+				340039431E43C30F0038093C /* Sources */,
+				340039441E43C30F0038093C /* Frameworks */,
+				340039451E43C30F0038093C /* Resources */,
+				3400396D1E43C3910038093C /* Swift Lint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempMail;
+			productName = TempMail;
+			productReference = 340039471E43C30F0038093C /* TempMail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3400395A1E43C30F0038093C /* TempMailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 340039671E43C30F0038093C /* Build configuration list for PBXNativeTarget "TempMailTests" */;
+			buildPhases = (
+				340039571E43C30F0038093C /* Sources */,
+				340039581E43C30F0038093C /* Frameworks */,
+				340039591E43C30F0038093C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3400395D1E43C30F0038093C /* PBXTargetDependency */,
+			);
+			name = TempMailTests;
+			productName = TempMailTests;
+			productReference = 3400395B1E43C30F0038093C /* TempMailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3400393F1E43C30F0038093C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ronan R. Nunes";
+				TargetAttributes = {
+					340039461E43C30F0038093C = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					3400395A1E43C30F0038093C = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 340039461E43C30F0038093C;
+					};
+				};
+			};
+			buildConfigurationList = 340039421E43C30F0038093C /* Build configuration list for PBXProject "TempMail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3400393E1E43C30F0038093C;
+			productRefGroup = 340039481E43C30F0038093C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				340039461E43C30F0038093C /* TempMail */,
+				3400395A1E43C30F0038093C /* TempMailTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		340039451E43C30F0038093C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340039551E43C30F0038093C /* LaunchScreen.storyboard in Resources */,
+				340039521E43C30F0038093C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340039591E43C30F0038093C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3400396D1E43C3910038093C /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$IGNORE_SWIFT_LINT\" == \"\" ]; then\n    if which swiftlint >/dev/null; then\n        swiftlint\n    else\n        echo \"warning: SwiftLint not installed!\"\n    fi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		340039431E43C30F0038093C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340039811E43C7D70038093C /* CryptoGateway.swift in Sources */,
+				340039781E43C5C20038093C /* GenerateMailboxUsecase.swift in Sources */,
+				3498583D1E43F158003D0ED3 /* MailboxGatewayErrros.swift in Sources */,
+				3400397E1E43C61F0038093C /* MailboxGateway.swift in Sources */,
+				340039791E43C5C20038093C /* GenerateMailboxPresenter.swift in Sources */,
+				349858391E43EEB0003D0ED3 /* RandomUsersGateway.swift in Sources */,
+				3400394B1E43C30F0038093C /* AppDelegate.swift in Sources */,
+				3498583F1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift in Sources */,
+				346D9E981E43E2DC006EC4DA /* DomainValueObject.swift in Sources */,
+				3400399E1E43DDF50038093C /* Result.swift in Sources */,
+				340039961E43DABB0038093C /* CryptoGatewayCommonCrypto.swift in Sources */,
+				340039A11E43DED20038093C /* Domain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340039571E43C30F0038093C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3400398F1E43D41D0038093C /* MailboxGatewaySpy.swift in Sources */,
+				340039701E43C5120038093C /* GenerateMailboxUsecaseTests.swift in Sources */,
+				3498583B1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift in Sources */,
+				349858411E43F368003D0ED3 /* MailboxGatewayTempMailAPITests.swift in Sources */,
+				340039851E43C87B0038093C /* CryptoGatewayTests.swift in Sources */,
+				3400398C1E43D37D0038093C /* CryptoGatewayStub.swift in Sources */,
+				340039921E43D4820038093C /* GenerateMailboxPresenterSpy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3400395D1E43C30F0038093C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 340039461E43C30F0038093C /* TempMail */;
+			targetProxy = 3400395C1E43C30F0038093C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		340039531E43C30F0038093C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				340039541E43C30F0038093C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		340039621E43C30F0038093C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		340039631E43C30F0038093C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		340039651E43C30F0038093C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TempMail/Base/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.tempmail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TempMail/Base/TempMail-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		340039661E43C30F0038093C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TempMail/Base/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.tempmail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TempMail/Base/TempMail-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		340039681E43C30F0038093C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TempMailTests/Base/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.TempMailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempMail.app/TempMail";
+			};
+			name = Debug;
+		};
+		340039691E43C30F0038093C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TempMailTests/Base/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ronanrodrigo.TempMailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempMail.app/TempMail";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		340039421E43C30F0038093C /* Build configuration list for PBXProject "TempMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340039621E43C30F0038093C /* Debug */,
+				340039631E43C30F0038093C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		340039641E43C30F0038093C /* Build configuration list for PBXNativeTarget "TempMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340039651E43C30F0038093C /* Debug */,
+				340039661E43C30F0038093C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		340039671E43C30F0038093C /* Build configuration list for PBXNativeTarget "TempMailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				340039681E43C30F0038093C /* Debug */,
+				340039691E43C30F0038093C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3400393F1E43C30F0038093C /* Project object */;
+}
