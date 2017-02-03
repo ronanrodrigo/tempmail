@@ -18,10 +18,11 @@ struct MailboxGatewayTempMailAPI: MailboxGateway {
     }
 
     private func generateDomainValueOject(json: Any?) -> Domain {
-        guard let domainNames = json as? [String], let randomDomainName = domainNames.first else {
+        guard let domainNames = json as? [String] else {
             return DomainValueObject(name: "@nutpa.net")
         }
-        return DomainValueObject(name: randomDomainName)
+        let randomDomainNamesIndex = Int(arc4random_uniform(UInt32(domainNames.count)))
+        return DomainValueObject(name: domainNames[randomDomainNamesIndex])
     }
 
     private func generateMailboxErros(error: Error?) -> MailboxGatewayErrors {
