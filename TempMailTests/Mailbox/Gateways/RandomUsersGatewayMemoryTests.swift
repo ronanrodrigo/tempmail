@@ -3,11 +3,11 @@ import XCTest
 
 class RandomUsersGatewayMemoryTests: XCTestCase {
 
-    var gateway: RandomUsersGatewayPlist!
+    var gateway: RandomUsersGatewayMemory!
 
     override func setUp() {
         super.setUp()
-        gateway = RandomUsersGatewayPlist()
+        gateway = RandomUsersGatewayMemory()
     }
 
     func testGenerateUsernameWithData() {
