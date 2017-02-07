@@ -12,6 +12,7 @@ class MailboxViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         setupHierarchyViews()
         setupHierarchyConstraints()
+        setupMailbox()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -28,6 +29,10 @@ class MailboxViewController: UIViewController {
          mailboxView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
          mailboxView.firstBaselineAnchor.constraint(equalTo: view.topAnchor),
          mailboxView.lastBaselineAnchor.constraint(equalTo: view.bottomAnchor)].activate()
+    }
+
+    private func setupMailbox() {
+        GenerateMailboxUsecaseFactory.make(presenter: mailboxView).generate()
     }
 
 }

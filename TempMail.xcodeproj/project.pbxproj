@@ -22,6 +22,8 @@
 		340039961E43DABB0038093C /* CryptoGatewayCommonCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340039951E43DABB0038093C /* CryptoGatewayCommonCrypto.swift */; };
 		3400399E1E43DDF50038093C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3400399D1E43DDF50038093C /* Result.swift */; };
 		340039A11E43DED20038093C /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340039A01E43DED20038093C /* Domain.swift */; };
+		340DCBBA1E49B70C00D7BBEF /* GenerateMailboxPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340DCBB91E49B70C00D7BBEF /* GenerateMailboxPresenterView.swift */; };
+		340DCBBC1E49BAAE00D7BBEF /* UIFont+Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340DCBBB1E49BAAE00D7BBEF /* UIFont+Sizes.swift */; };
 		346D9E981E43E2DC006EC4DA /* DomainValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D9E971E43E2DC006EC4DA /* DomainValueObject.swift */; };
 		349858391E43EEB0003D0ED3 /* RandomUsersGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858381E43EEB0003D0ED3 /* RandomUsersGateway.swift */; };
 		3498583B1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498583A1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift */; };
@@ -72,6 +74,8 @@
 		340039951E43DABB0038093C /* CryptoGatewayCommonCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoGatewayCommonCrypto.swift; sourceTree = "<group>"; };
 		3400399D1E43DDF50038093C /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		340039A01E43DED20038093C /* Domain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
+		340DCBB91E49B70C00D7BBEF /* GenerateMailboxPresenterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateMailboxPresenterView.swift; sourceTree = "<group>"; };
+		340DCBBB1E49BAAE00D7BBEF /* UIFont+Sizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Sizes.swift"; sourceTree = "<group>"; };
 		346D9E971E43E2DC006EC4DA /* DomainValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainValueObject.swift; sourceTree = "<group>"; };
 		349858381E43EEB0003D0ED3 /* RandomUsersGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGateway.swift; sourceTree = "<group>"; };
 		3498583A1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGatewayStub.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				346D9E961E43E2C6006EC4DA /* Entities */,
 				349858501E4424CE003D0ED3 /* Factories */,
 				340039941E43DAB00038093C /* Gateways */,
+				340DCBB81E49B6EC00D7BBEF /* Presenters */,
 				340039931E43DAA10038093C /* Protocols */,
 				3400397B1E43C5D20038093C /* Usecases */,
 				3498584D1E442487003D0ED3 /* ViewControllers */,
@@ -299,6 +304,14 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		340DCBB81E49B6EC00D7BBEF /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				340DCBB91E49B70C00D7BBEF /* GenerateMailboxPresenterView.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
 		346D9E961E43E2C6006EC4DA /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,7 +346,6 @@
 			children = (
 				34AB95F11E49177F0089DD76 /* MailboxView.swift */,
 			);
-			name = Views;
 			path = Views;
 			sourceTree = "<group>";
 		};
@@ -341,8 +353,8 @@
 			isa = PBXGroup;
 			children = (
 				34AB95FD1E492D580089DD76 /* Sequence+NSLayoutConstraint.swift */,
+				340DCBBB1E49BAAE00D7BBEF /* UIFont+Sizes.swift */,
 			);
-			name = Views;
 			path = Views;
 			sourceTree = "<group>";
 		};
@@ -478,11 +490,13 @@
 				349858521E4424E3003D0ED3 /* GenerateMailboxUsecaseFactory.swift in Sources */,
 				349858541E442576003D0ED3 /* MailboxGatewayTempMailAPIFactory.swift in Sources */,
 				3400397E1E43C61F0038093C /* MailboxGateway.swift in Sources */,
+				340DCBBA1E49B70C00D7BBEF /* GenerateMailboxPresenterView.swift in Sources */,
 				340039791E43C5C20038093C /* GenerateMailboxPresenter.swift in Sources */,
 				349858391E43EEB0003D0ED3 /* RandomUsersGateway.swift in Sources */,
 				3400394B1E43C30F0038093C /* AppDelegate.swift in Sources */,
 				3498585A1E442691003D0ED3 /* MailboxNavigationController.swift in Sources */,
 				349858561E4425A1003D0ED3 /* CryptoGatewayCommonCryptoFactory.swift in Sources */,
+				340DCBBC1E49BAAE00D7BBEF /* UIFont+Sizes.swift in Sources */,
 				3498583F1E43F335003D0ED3 /* MailboxGatewayTempMailAPI.swift in Sources */,
 				34AB95F21E49177F0089DD76 /* MailboxView.swift in Sources */,
 				346D9E981E43E2DC006EC4DA /* DomainValueObject.swift in Sources */,
