@@ -6,7 +6,7 @@ enum MailBoxViewElements {
 
 class MailboxView: UIView {
 
-    lazy var address: UITextField = {
+    let address: UITextField = {
         let textField = UITextField(frame: .zero)
         textField.translatesAutoresizingMaskIntoConstraints = false
         let textFieldHeight: CGFloat = 30
