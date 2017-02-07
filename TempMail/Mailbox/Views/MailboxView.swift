@@ -15,6 +15,13 @@ class MailboxView: UIView {
         return textField
     }()
 
+    let activityIndicator: UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView(frame: .zero)
+        view.hidesWhenStopped = true
+        view.startAnimating()
+        return view
+    }()
+
     init() {
         super.init(frame: .zero)
         setupHierarchyViews()
@@ -33,12 +40,20 @@ class MailboxView: UIView {
 
     private func setupHierarchyViews() {
         addSubview(address)
+        addSubview(activityIndicator)
     }
 
     private func setupHierarchyConstraints() {
         [address.leadingAnchor.constraint(equalTo: leadingAnchor),
          trailingAnchor.constraint(equalTo: address.trailingAnchor),
-         address.topAnchor.constraint(equalTo: topAnchor)].activate().forEach { $0.constant = 10 }
+         address.topAnchor.constraint(equalTo: topAnchor)]
+            .activate()
+            .constant(CGFloat.margin.normal)
+        [address.trailingAnchor.constraint(equalTo: activityIndicator.trailingAnchor),
+         activityIndicator.widthAnchor.constraint(equalToConstant: 20),
+         activityIndicator.heightAnchor.constraint(equalToConstant: 20),
+         activityIndicator.centerYAnchor.constraint(equalTo: address.centerYAnchor)]
+            .activate()
     }
 
 }

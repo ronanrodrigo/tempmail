@@ -8,4 +8,10 @@ extension Sequence where Iterator.Element == NSLayoutConstraint {
         return constraints
     }
 
+    @discardableResult func constant(_ value: CGFloat) -> [NSLayoutConstraint] {
+        guard let constraints = self as? [NSLayoutConstraint] else { fatalError() }
+        constraints.forEach { $0.constant = value }
+        return constraints
+    }
+
 }

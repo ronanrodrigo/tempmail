@@ -24,6 +24,7 @@
 		340039A11E43DED20038093C /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340039A01E43DED20038093C /* Domain.swift */; };
 		340DCBBA1E49B70C00D7BBEF /* GenerateMailboxPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340DCBB91E49B70C00D7BBEF /* GenerateMailboxPresenterView.swift */; };
 		340DCBBC1E49BAAE00D7BBEF /* UIFont+Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340DCBBB1E49BAAE00D7BBEF /* UIFont+Sizes.swift */; };
+		340DCBBE1E49BFE500D7BBEF /* CGFloat+Margins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340DCBBD1E49BFE500D7BBEF /* CGFloat+Margins.swift */; };
 		346D9E981E43E2DC006EC4DA /* DomainValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D9E971E43E2DC006EC4DA /* DomainValueObject.swift */; };
 		349858391E43EEB0003D0ED3 /* RandomUsersGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349858381E43EEB0003D0ED3 /* RandomUsersGateway.swift */; };
 		3498583B1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498583A1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift */; };
@@ -76,6 +77,7 @@
 		340039A01E43DED20038093C /* Domain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
 		340DCBB91E49B70C00D7BBEF /* GenerateMailboxPresenterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateMailboxPresenterView.swift; sourceTree = "<group>"; };
 		340DCBBB1E49BAAE00D7BBEF /* UIFont+Sizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Sizes.swift"; sourceTree = "<group>"; };
+		340DCBBD1E49BFE500D7BBEF /* CGFloat+Margins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Margins.swift"; sourceTree = "<group>"; };
 		346D9E971E43E2DC006EC4DA /* DomainValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainValueObject.swift; sourceTree = "<group>"; };
 		349858381E43EEB0003D0ED3 /* RandomUsersGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGateway.swift; sourceTree = "<group>"; };
 		3498583A1E43EF33003D0ED3 /* RandomUsersGatewayStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUsersGatewayStub.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 			children = (
 				34AB95FD1E492D580089DD76 /* Sequence+NSLayoutConstraint.swift */,
 				340DCBBB1E49BAAE00D7BBEF /* UIFont+Sizes.swift */,
+				340DCBBD1E49BFE500D7BBEF /* CGFloat+Margins.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				340039811E43C7D70038093C /* CryptoGateway.swift in Sources */,
 				340039781E43C5C20038093C /* GenerateMailboxUsecase.swift in Sources */,
 				3498583D1E43F158003D0ED3 /* MailboxGatewayErrros.swift in Sources */,
+				340DCBBE1E49BFE500D7BBEF /* CGFloat+Margins.swift in Sources */,
 				3498584F1E442498003D0ED3 /* MailboxViewController.swift in Sources */,
 				349858521E4424E3003D0ED3 /* GenerateMailboxUsecaseFactory.swift in Sources */,
 				349858541E442576003D0ED3 /* MailboxGatewayTempMailAPIFactory.swift in Sources */,
